@@ -1,0 +1,39 @@
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+
+# Orchestration / routing / fallbacks
+langgraph==0.3.34
+langchain>=0.1.20
+langsmith>=0.1.20
+
+# Typed I/O
+pydantic-ai==0.1.6
+pydantic>=2.11.0,<3.0
+guardrails-ai>=0.4.1
+
+# LLM providers / vector store
+openai>=1.25.0
+qdrant-client>=1.8.1
+
+# Misc
+python-dotenv>=1.0.1
+
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+
+# Core orchestration
+langgraph==0.3.34          # :contentReference[oaicite:0]{index=0}
+langchain>=0.1.20      # :contentReference[oaicite:2]{index=2}
+
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+langgraph==0.3.34           # :contentReference[oaicite:0]{index=0}
+pydantic-ai==0.1.6          # :contentReference[oaicite:1]{index=1}
+pydantic>=2.11.0,<3.0
+langchain>=0.1.20
+openai>=1.25.0
+qdrant-client>=1.8.1
+python-dotenv>=1.0.1
+
+
+
