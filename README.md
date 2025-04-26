@@ -92,7 +92,7 @@ The system is architected to handle high-throughput regulatory analysis:
 
 ## License
 
-Copyright (c) 2023-2024
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Why LangGraph *and* Pydantic-AI?
 
@@ -123,7 +123,7 @@ open http://localhost:8501    # interactive playground
 
 
 
-## Orchestration Flow (Mermaid)
+
 
 
 
