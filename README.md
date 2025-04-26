@@ -127,15 +127,4 @@ open http://localhost:8501    # interactive playground
 
 
 
-```mermaid
-stateDiagram-v2
-    [*] --> RETRIEVE : entry
-    RETRIEVE --> ANALYZE : docs\n→ messages+=log
-    ANALYZE --> RETRIEVE : "CONTINUE"
-    ANALYZE --> DRAFT : "DONE"
-    DRAFT --> [*]      : END
 
-    state DRAFT {
-        [*] --> XBRL_AGENT : draft_statement()
-        XBRL_AGENT --> [*]
-    }
