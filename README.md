@@ -82,6 +82,23 @@ RegulaSense is designed for extensibility:
 - **Multi-Agent Specialization**: Domain-specific agents for different regulatory areas
 - **Enterprise Integration**: API hooks for ERP and compliance management systems
 
+## Data Ingestion
+
+RegulaSense includes a pluggable data ingestion module for gathering regulatory content:
+
+```bash
+# Install the ingestion module
+pip install -e packages/ingest
+
+# Ingest data from FRED, FSB, and BIS
+ingest fred fsb bis
+
+# Create snapshots instead of uploading to Qdrant
+ingest fred --snapshot ./sample_data
+```
+
+See [packages/ingest/README.md](packages/ingest/README.md) for more details.
+
 ## Performance Considerations
 
 The system is architected to handle high-throughput regulatory analysis:
